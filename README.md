@@ -1,4 +1,4 @@
-# BUPT Course Description Template
+# DUT Course Description Template
 
 This repository contains a template for creating Course Description using [Typst](https://typst.app/). It is designed to assist in generating clear and professional course summaries, especially useful for students at BUPT who need to present course details in a standardized and visually appealing format when applying to universities.
 
@@ -33,13 +33,13 @@ Please begin your `main.typ` file with the following metadata:
   id: "Your Student ID",
   // The cover image settings
   cover: (
-    logo_path: "logo_bupt2.png",
+    logo_path: "logo_2.png",
     logo_width: 100%,
     logo_with_university_name: true,
   ),
   // The watermark image settings as the background of the document
   watermark: (
-    img_path: "logo_bupt_translucent.png",
+    img_path: "logo_1_transparent.png",
     img_width: 160mm,
   ),
 )
