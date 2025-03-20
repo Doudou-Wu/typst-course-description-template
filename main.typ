@@ -1,4 +1,5 @@
 #import "template.typ": template, course
+// #import "@preview/tablex:0.0.8": tablex, rowspanx, colspanx
 
 #show: template.with(
   university: "Dalian University of Technology",
@@ -18,60 +19,110 @@
   ),
 )
 
-= Category 1
+= Foundation Academic Activities
+== Calculus
 
-#course(
-  name: [Course Name 1],
-  id: [Course ID 1],
-  semester: [Semester 1],
-  credit: [Credit 1],
-  hours: [Hours 1],
-  grade: [Grade 1],
-  preparatory: [Preparatory Course(s) 1],
-  prerequisite: [Prerequisite(s) 1],
-  content: [
-    - Chapter 1
-    - Chapter 2
-    - Chapter 3
-  ],
-  description: [
-    The main body of Course Description 1 \
-    #lorem(100)
-  ],
-  assessment: [
-    - Assignment 1
-    - Assignment 2
-    - Assignment 3
-    - Exam 1
-    - Exam 2
-  ],
+#table(
+  columns: (1fr, 1fr, 1fr, 1fr),
+  align: center,
+  // 第一行：表头
+  [*Course Title*], [*Credits\
+  (China)*], [*Credits\
+  (ECTS)*], [*Course Place on the Transcript*],
+  // 数据行
+  [Calculus B], [6], [8.4], [2019 term 1],
+  [Calculus B], [6], [8.4], [2019 term 1],
+  [Calculus B], [6], [8.4], [2019 term 1],
+  // 总计行
+  [*Total*], [*20*], [*28*], [],
+  // 单列行（合并 4 列）
+  // colspanx(4)[*Additional information in a single column.*],
+  // colspanx: 4, [*More details can go here.*],
 )
 
-= Category 2
-
-#course(
-  name: [Course Name 2],
-  id: [Course ID 2],
-  semester: [Semester 2],
-  credit: [Credit 2],
-  hours: [Hours 2],
-  grade: [Grade 2],
-  preparatory: [Preparatory Course(s) 2],
-  prerequisite: [Prerequisite(s) 2],
-  content: [
-    - Chapter 1
-    - Chapter 2
-    - Chapter 3
-  ],
-  description: [
-    The main body of Course Description 2 \
-    #lorem(100)
-  ],
-  assessment: [
-    - Assignment 1
-    - Assignment 2
-    - Assignment 3
-    - Exam 1
-    - Exam 2
-  ],
+#table(
+  columns: (1fr),
+  [*Brief description of the courses*],
+  [*Calculus B:* \
+  dsdwdwdwdgfdgfgdfgfgdfgdfgdf],
+  [*Calculus B:* \
+  dsdwdwdwdgfdgfgdfgfgdfgdfgdf],
+  [*Calculus B:* \
+  dsdwdwdwdgfdgfgdfgfgdfgdgdf],
 )
+
+== Discrete Structures
+
+#table(
+  columns: (1fr, 1fr, 1fr, 1fr),
+  align: center,
+  // 第一行：表头
+  [*Course Title*], [*Credits\
+  (China)*], [*Credits\
+  (ECTS)*], [*Course Place on the Transcript*],
+  // 数据行
+  
+  // 总计行
+  [*Total*], [*20*], [*28*], [],
+  // 单列行（合并 4 列）
+  // colspanx(4)[*Additional information in a single column.*],
+  // colspanx: 4, [*More details can go here.*],
+)
+
+#table(
+  columns: (1fr),
+  [*Brief description of the courses*],
+  [*Calculus B:* \
+  dsdwdwdwdgfdgfgdfgfgdfgdfgdf],
+)
+
+== Linear Algebra
+
+== Probability Theory
+
+== Physics
+
+== Chemistry
+
+= Practical Computer Science
+
+== Programming
+
+== Data Structures and Algorithms
+
+== Databases and Information Systems
+
+== Software Engineering
+
+= Technical Computer Science (Computer Architecture)
+
+== Operating Systems and System Software
+
+== Data Communication and Security
+
+= Theoretical Computer Science
+
+== Automata Theory and Formal Languages
+
+== Computability and Complexity Theory
+
+== Mathematical Logic
+
+== Data Science and Digital Image Processing
+
+= Artificial Intelligence
+
+== Machine Learning
+
+== Deep Learning
+
+== Natural Language Processing
+
+= Internship Project and Graduation Design Thesis
+
+== Internship and Practice Project
+
+== Comprehensive Quality Training
+
+== Graduation Design Thesis
+
